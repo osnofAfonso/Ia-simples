@@ -6,41 +6,72 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você se encontra em uma situação dificil. O que significa crescer para você?",
         alternativas: [
-            "Isso é assustador!",
-            "Isso é maravilhoso!"
+            {
+                texto: "Aprender com novas experiências e desafios",
+                afirmacao: "Ao aprender com novas experiências e desafios é essencial para o crescimento pessoal. Ao se expor a novas situações e aprender com elas, você expande seus horizontes e desenvolve habilidades valiosas para o futuro."
+            },
+            {
+                texto: "Manter as coisas como sempre foram, sem muitas mudanças.",
+                afirmacao: "Você prefere manter as coisas como sempre foram pode significar resistência à mudança. Embora haja conforto na familiaridade, o crescimento muitas vezes requer enfrentar o desconhecido e se adaptar a novos cenários."
+            }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Como você lida com mudanças na sua vida?",
         alternativas: [
-            "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-            "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+            {
+                texto: "Encaro as mudanças como oportunidades de crescimento pessoal.",
+                afirmacao: "Ao encarar as mudanças como oportunidades de crescimento pessoal indica uma mentalidade aberta e receptiva. Essa atitude pode abrir portas para novas experiências e realizações que não seriam possíveis sem a disposição para se adaptar."
+            },
+            {
+                texto: "Prefiro evitar mudanças para manter a estabilidade.",
+                afirmacao: " Você sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+            }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Qual a importância de sair da zona de conforto para você?",
         alternativas: [
-            "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-            "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores."
+            {
+                texto: "É essencial para alcançar novos objetivos e expandir meus horizontes.",
+                afirmacao: "Sair da zona de conforto é fundamental para explorar novos territórios e alcançar objetivos mais ambiciosos. Ao enfrentar desafios e superar limitações pessoais, você expande suas habilidades e fortalece sua capacidade de adaptação."
+            },
+            {
+                texto: "Prefiro permanecer na zona de conforto para evitar desconfortos.",
+                afirmacao: "Permanecer na zona de conforto pode proporcionar uma sensação de segurança, mas também pode limitar o crescimento pessoal. A resistência à mudança pode impedir novas oportunidades e experiências enriquecedoras."
+            }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Como você encara novos desafios?",
         alternativas: [
-            "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-            "Criar uma imagem utilizando um gerador de imagem de IA."
+            {
+                texto: "Como oportunidades para aprender e evoluir.",
+                afirmacao: "Ao encarar novos desafios como oportunidades de aprendizado e crescimento pessoal é essencial para desenvolver habilidades e alcançar novos patamares. Cada desafio superado representa uma oportunidade de fortalecimento e evolução."
+             },
+            {
+                texto: "Como obstáculos que devem ser evitados ou minimizados.",
+                afirmacao: "Quando ver novos desafios como obstáculos pode limitar o crescimento pessoal. Embora possa ser tentador evitar dificuldades, enfrentar desafios pode proporcionar experiências valiosas e oportunidades de crescimento que não devem ser subestimadas."
+            }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "O que você espera alcançar ao longo da sua jornada de crescimento pessoal?",
         alternativas: [
-           "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial."
+            {
+                texto: "Desenvolver novas habilidades e alcançar metas desafiadoras.                ",
+                afirmacao: "Ao longo da jornada de crescimento pessoal, desenvolver novas habilidades e alcançar metas desafiadoras são metas fundamentais. Cada conquista representa um passo em direção ao autoaperfeiçoamento e à realização de objetivos pessoais."
+            },
+            {
+                texto: "Manter as coisas estáveis e confortáveis, sem grandes mudanças.",
+                afirmacao: "Ao Manter as coisas estáveis e confortáveis pode trazer uma sensação de segurança, mas pode limitar o potencial de crescimento pessoal a longo prazo. Explorar novas oportunidades e desafios pode abrir novos horizontes e proporcionar uma maior realização pessoal"
+            }
         ]
     },
 ];
+
 
 let atual = 0;
 let perguntaAtual;
